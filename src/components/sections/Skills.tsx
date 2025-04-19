@@ -1,39 +1,59 @@
 import React from 'react';
+import { FaTools, FaUsersCog, FaDatabase, FaCloud } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="py-20 bg-gradient-to-b from-teal-50 to-white">
+    <section id="skills" className="py-20 bg-gradient-to-b from-white to-teal-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-teal-600 sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-teal-600 sm:text-4xl flex items-center justify-center">
+            <IconContext.Provider value={{ size: '32px', className: 'mr-2' }}>
+              <FaTools />
+            </IconContext.Provider>
             Skills & Expertise
           </h2>
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
-              <h3 className="text-xl font-bold text-teal-600">Technical Leadership</h3>
-              <ul className="mt-2 text-gray-600 list-disc list-inside">
+              <div className="flex items-center mb-4">
+                <IconContext.Provider value={{ size: '24px', className: 'mr-2 text-teal-600' }}>
+                  <FaUsersCog />
+                </IconContext.Provider>
+                <h3 className="text-xl font-bold text-teal-600">Technical Leadership</h3>
+              </div>
+              <ul className="mt-4 text-gray-600 list-disc list-inside">
                 <li>Team Leadership & Mentoring</li>
-                <li>Technical Strategy & Architecture</li>
-                <li>Project Management</li>
-                <li>Stakeholder Management</li>
+                <li>Strategic Planning & Execution</li>
+                <li>Cross-functional Collaboration</li>
+                <li>Agile Methodologies</li>
               </ul>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
-              <h3 className="text-xl font-bold text-teal-600">Data Engineering</h3>
-              <ul className="mt-2 text-gray-600 list-disc list-inside">
-                <li>Data Architecture</li>
-                <li>ETL/ELT Pipelines</li>
-                <li>Data Warehousing</li>
+              <div className="flex items-center mb-4">
+                <IconContext.Provider value={{ size: '24px', className: 'mr-2 text-teal-600' }}>
+                  <FaDatabase />
+                </IconContext.Provider>
+                <h3 className="text-xl font-bold text-teal-600">Data Engineering</h3>
+              </div>
+              <ul className="mt-4 text-gray-600 list-disc list-inside">
+                <li>Data Architecture & Design</li>
+                <li>ETL/ELT Pipeline Development</li>
                 <li>Data Quality & Governance</li>
+                <li>Big Data Processing</li>
               </ul>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
-              <h3 className="text-xl font-bold text-teal-600">Cloud & Technologies</h3>
-              <ul className="mt-2 text-gray-600 list-disc list-inside">
-                <li>AWS/GCP/Azure</li>
-                <li>Big Data Technologies</li>
-                <li>Data Modeling</li>
-                <li>CI/CD & DevOps</li>
+              <div className="flex items-center mb-4">
+                <IconContext.Provider value={{ size: '24px', className: 'mr-2 text-teal-600' }}>
+                  <FaCloud />
+                </IconContext.Provider>
+                <h3 className="text-xl font-bold text-teal-600">Cloud & Technologies</h3>
+              </div>
+              <ul className="mt-4 text-gray-600 list-disc list-inside">
+                <li>AWS, Azure, GCP</li>
+                <li>Apache Spark, Kafka</li>
+                <li>Python, SQL, Scala</li>
+                <li>Data Warehousing</li>
               </ul>
             </div>
           </div>
