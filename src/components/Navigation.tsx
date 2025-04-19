@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaHome, FaUser, FaTools, FaBriefcase, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 
 const Navigation: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,7 +14,7 @@ const Navigation: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = [
+  const navItems: { id: string; label: string; icon: IconType }[] = [
     { id: 'home', label: 'Home', icon: FaHome },
     { id: 'about', label: 'About', icon: FaUser },
     { id: 'skills', label: 'Skills', icon: FaTools },
@@ -40,7 +41,7 @@ const Navigation: React.FC = () => {
                   href={`#${item.id}`}
                   className="flex items-center text-gray-600 hover:text-teal-600 transition-colors duration-200"
                 >
-                  <Icon style={{ marginRight: '0.25rem', fontSize: '16px' }} />
+                  <Icon className="mr-1" size={16} />
                   {item.label}
                 </a>
               );

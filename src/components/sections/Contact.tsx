@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-teal-600 sm:text-4xl flex items-center justify-center">
-            <FaEnvelope style={{ marginRight: '0.5rem', fontSize: '32px' }} />
+            <FaEnvelope className="mr-2" size={32} />
             Contact
           </h2>
           <p className="mt-4 text-xl text-gray-600">
@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
               href="mailto:devang.shah@example.com"
               className="text-teal-600 hover:text-teal-500 flex items-center"
             >
-              <FaEnvelope style={{ marginRight: '0.5rem', fontSize: '24px' }} />
+              <FaEnvelope className="mr-2" size={24} />
               Email
             </a>
             <a
@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
               rel="noopener noreferrer"
               className="text-teal-600 hover:text-teal-500 flex items-center"
             >
-              <FaLinkedin style={{ marginRight: '0.5rem', fontSize: '24px' }} />
+              <FaLinkedin className="mr-2" size={24} />
               LinkedIn
             </a>
             <a
@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
               rel="noopener noreferrer"
               className="text-teal-600 hover:text-teal-500 flex items-center"
             >
-              <FaGithub style={{ marginRight: '0.5rem', fontSize: '24px' }} />
+              <FaGithub className="mr-2" size={24} />
               GitHub
             </a>
           </div>

@@ -7,7 +7,7 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-teal-600 sm:text-4xl flex items-center justify-center">
-            <FaUserTie style={{ marginRight: '0.5rem', fontSize: '32px' }} />
+            <FaUserTie className="mr-2" size={32} />
             About Me
           </h2>
           <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-600 sm:mt-4">

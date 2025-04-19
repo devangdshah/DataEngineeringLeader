@@ -7,13 +7,13 @@ const Skills: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-teal-600 sm:text-4xl flex items-center justify-center">
-            <FaTools style={{ marginRight: '0.5rem', fontSize: '32px' }} />
+            <FaTools className="mr-2" size={32} />
             Skills & Expertise
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
               <div className="flex items-center mb-4">
-                <FaUsersCog style={{ marginRight: '0.5rem', fontSize: '24px', color: '#0D9488' }} />
+                <FaUsersCog className="mr-2 text-teal-600" size={24} />
                 <h3 className="text-xl font-bold text-teal-600">Technical Leadership</h3>
               </div>
               <ul className="mt-4 text-gray-600 list-disc list-inside">
@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
               <div className="flex items-center mb-4">
-                <FaDatabase style={{ marginRight: '0.5rem', fontSize: '24px', color: '#0D9488' }} />
+                <FaDatabase className="mr-2 text-teal-600" size={24} />
                 <h3 className="text-xl font-bold text-teal-600">Data Engineering</h3>
               </div>
               <ul className="mt-4 text-gray-600 list-disc list-inside">
@@ -37,7 +37,7 @@ const Skills: React.FC = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
               <div className="flex items-center mb-4">
-                <FaCloud style={{ marginRight: '0.5rem', fontSize: '24px', color: '#0D9488' }} />
+                <FaCloud className="mr-2 text-teal-600" size={24} />
                 <h3 className="text-xl font-bold text-teal-600">Cloud & Technologies</h3>
               </div>
               <ul className="mt-4 text-gray-600 list-disc list-inside">

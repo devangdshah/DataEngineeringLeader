@@ -7,13 +7,13 @@ const Projects: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-teal-600 sm:text-4xl flex items-center justify-center">
-            <FaProjectDiagram style={{ marginRight: '0.5rem', fontSize: '32px' }} />
+            <FaProjectDiagram className="mr-2" size={32} />
             Projects
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
               <div className="flex items-center mb-4">
-                <FaDatabase style={{ marginRight: '0.5rem', fontSize: '24px', color: '#0D9488' }} />
+                <FaDatabase className="mr-2 text-teal-600" size={24} />
                 <h3 className="text-xl font-bold text-teal-600">Enterprise Data Platform</h3>
               </div>
               <p className="mt-2 text-gray-600">
@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
               <div className="flex items-center mb-4">
-                <FaShieldAlt style={{ marginRight: '0.5rem', fontSize: '24px', color: '#0D9488' }} />
+                <FaShieldAlt className="mr-2 text-teal-600" size={24} />
                 <h3 className="text-xl font-bold text-teal-600">Data Governance Framework</h3>
               </div>
               <p className="mt-2 text-gray-600">
@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
               <div className="flex items-center mb-4">
-                <FaChartLine style={{ marginRight: '0.5rem', fontSize: '24px', color: '#0D9488' }} />
+                <FaChartLine className="mr-2 text-teal-600" size={24} />
                 <h3 className="text-xl font-bold text-teal-600">Streaming Analytics Pipeline</h3>
               </div>
               <p className="mt-2 text-gray-600">
