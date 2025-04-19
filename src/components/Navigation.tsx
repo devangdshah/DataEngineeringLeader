@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { FaHome, FaUser, FaTools, FaBriefcase, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
-import { IconContext } from 'react-icons';
 
 const Navigation: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,18 +32,19 @@ const Navigation: React.FC = () => {
             <span className="text-xl font-bold text-teal-600">Devang's Portfolio</span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <IconContext.Provider value={{ size: '16px', className: 'mr-1' }}>
-              {navItems.map((item) => (
+            {navItems.map((item) => {
+              const Icon = item.icon;
+              return (
                 <a
                   key={item.id}
                   href={`#${item.id}`}
                   className="flex items-center text-gray-600 hover:text-teal-600 transition-colors duration-200"
                 >
-                  <item.icon />
+                  <Icon style={{ marginRight: '0.25rem', fontSize: '16px' }} />
                   {item.label}
                 </a>
-              ))}
-            </IconContext.Provider>
+              );
+            })}
           </div>
           <div className="md:hidden flex items-center">
             {/* Mobile menu button - can be implemented later if needed */}

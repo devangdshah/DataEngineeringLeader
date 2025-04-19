@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaBriefcase, FaTasks } from 'react-icons/fa';
-import { IconContext } from 'react-icons';
 
 const Experience: React.FC = () => {
   return (
@@ -8,9 +7,7 @@ const Experience: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-teal-600 sm:text-4xl flex items-center justify-center">
-            <IconContext.Provider value={{ size: '32px', className: 'mr-2' }}>
-              <FaBriefcase />
-            </IconContext.Provider>
+            <FaBriefcase style={{ marginRight: '0.5rem', fontSize: '32px' }} />
             Experience
           </h2>
           <div className="mt-12 space-y-8">
@@ -26,9 +23,7 @@ const Experience: React.FC = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
               <div className="flex items-center mb-4">
-                <IconContext.Provider value={{ size: '24px', className: 'mr-2 text-teal-600' }}>
-                  <FaTasks />
-                </IconContext.Provider>
+                <FaTasks style={{ marginRight: '0.5rem', fontSize: '24px', color: '#0D9488' }} />
                 <h3 className="text-xl font-bold text-teal-600">Key Responsibilities</h3>
               </div>
               <ul className="mt-2 text-gray-600 list-disc list-inside">

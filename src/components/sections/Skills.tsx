@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaTools, FaUsersCog, FaDatabase, FaCloud } from 'react-icons/fa';
-import { IconContext } from 'react-icons';
 
 const Skills: React.FC = () => {
   return (
@@ -8,17 +7,13 @@ const Skills: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-teal-600 sm:text-4xl flex items-center justify-center">
-            <IconContext.Provider value={{ size: '32px', className: 'mr-2' }}>
-              <FaTools />
-            </IconContext.Provider>
+            <FaTools style={{ marginRight: '0.5rem', fontSize: '32px' }} />
             Skills & Expertise
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
               <div className="flex items-center mb-4">
-                <IconContext.Provider value={{ size: '24px', className: 'mr-2 text-teal-600' }}>
-                  <FaUsersCog />
-                </IconContext.Provider>
+                <FaUsersCog style={{ marginRight: '0.5rem', fontSize: '24px', color: '#0D9488' }} />
                 <h3 className="text-xl font-bold text-teal-600">Technical Leadership</h3>
               </div>
               <ul className="mt-4 text-gray-600 list-disc list-inside">
@@ -30,9 +25,7 @@ const Skills: React.FC = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
               <div className="flex items-center mb-4">
-                <IconContext.Provider value={{ size: '24px', className: 'mr-2 text-teal-600' }}>
-                  <FaDatabase />
-                </IconContext.Provider>
+                <FaDatabase style={{ marginRight: '0.5rem', fontSize: '24px', color: '#0D9488' }} />
                 <h3 className="text-xl font-bold text-teal-600">Data Engineering</h3>
               </div>
               <ul className="mt-4 text-gray-600 list-disc list-inside">
@@ -44,9 +37,7 @@ const Skills: React.FC = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
               <div className="flex items-center mb-4">
-                <IconContext.Provider value={{ size: '24px', className: 'mr-2 text-teal-600' }}>
-                  <FaCloud />
-                </IconContext.Provider>
+                <FaCloud style={{ marginRight: '0.5rem', fontSize: '24px', color: '#0D9488' }} />
                 <h3 className="text-xl font-bold text-teal-600">Cloud & Technologies</h3>
               </div>
               <ul className="mt-4 text-gray-600 list-disc list-inside">

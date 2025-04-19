@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaUserTie } from 'react-icons/fa';
-import { IconContext } from 'react-icons';
 
 const About: React.FC = () => {
   return (
@@ -8,9 +7,7 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-teal-600 sm:text-4xl flex items-center justify-center">
-            <IconContext.Provider value={{ size: '32px', className: 'mr-2' }}>
-              <FaUserTie />
-            </IconContext.Provider>
+            <FaUserTie style={{ marginRight: '0.5rem', fontSize: '32px' }} />
             About Me
           </h2>
           <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-600 sm:mt-4">
