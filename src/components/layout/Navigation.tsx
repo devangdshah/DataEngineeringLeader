@@ -22,7 +22,7 @@ const Navigation: React.FC = () => {
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="text-white font-bold hover:text-teal-100 transition-colors"
               >
-                Portfolio
+                Devang Shah
               </button>
             </div>
           </div>
@@ -65,6 +65,12 @@ const Navigation: React.FC = () => {
                 Experience
               </button>
               <button 
+                onClick={() => scrollToSection('certifications')}
+                className="text-teal-100 hover:bg-teal-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Certifications
+              </button>
+              <button 
                 onClick={() => scrollToSection('projects')}
                 className="text-teal-100 hover:bg-teal-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
@@ -101,6 +107,12 @@ const Navigation: React.FC = () => {
             className="text-teal-100 hover:bg-teal-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left"
           >
             Experience
+          </button>
+          <button 
+            onClick={() => scrollToSection('certifications')}
+            className="text-teal-100 hover:bg-teal-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+          >
+            Certifications
           </button>
           <button 
             onClick={() => scrollToSection('projects')}
