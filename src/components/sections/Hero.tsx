@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
         <div className="text-center">
           <div className="flex justify-center mb-8">
             <img
-              src="/images/profile.png"
+              src={`${process.env.PUBLIC_URL}/images/profile.png`}
               alt="Devang Shah"
               className="h-48 w-48 rounded-full object-cover border-4 border-white shadow-lg"
             />
