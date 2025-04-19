@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaUserTie } from 'react-icons/fa';
 
 const About: React.FC = () => {
   return (
@@ -7,7 +6,20 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-teal-600 sm:text-4xl flex items-center justify-center">
-            <FaUserTie className="mr-2" size={32} />
+            <svg
+              className="mr-2 h-8 w-8 text-teal-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              />
+            </svg>
             About Me
           </h2>
           <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-600 sm:mt-4">

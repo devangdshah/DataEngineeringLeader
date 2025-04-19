@@ -1,37 +1,43 @@
 import React from 'react';
-import { FaBriefcase, FaTasks } from 'react-icons/fa';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-20 bg-gradient-to-b from-white to-teal-50">
+    <section id="experience" className="py-20 bg-gradient-to-b from-teal-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-teal-600 sm:text-4xl flex items-center justify-center">
-            <FaBriefcase className="mr-2" size={32} />
+            <svg
+              className="mr-2 h-8 w-8 text-teal-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
             Experience
           </h2>
-          <div className="mt-12 space-y-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
-              <div className="mb-4">
-                <h3 className="text-xl font-bold text-teal-600">Senior Data Engineering Leader</h3>
-              </div>
-              <p className="mt-2 text-gray-600">
-                Leading cross-functional data engineering teams, setting technical direction, and driving the implementation 
-                of enterprise data platforms. Responsible for data strategy, architecture decisions, and ensuring the delivery 
-                of high-quality, scalable data solutions.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
-              <div className="flex items-center mb-4">
-                <FaTasks className="mr-2 text-teal-600" size={24} />
-                <h3 className="text-xl font-bold text-teal-600">Key Responsibilities</h3>
-              </div>
-              <ul className="mt-2 text-gray-600 list-disc list-inside">
-                <li>Leading and mentoring data engineering teams</li>
-                <li>Architecting and implementing enterprise data platforms</li>
-                <li>Driving data strategy and governance initiatives</li>
-                <li>Collaborating with stakeholders across the organization</li>
-                <li>Ensuring data quality and reliability at scale</li>
+          <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-600 sm:mt-4">
+            Senior Data Engineering Leader with a proven track record of delivering complex data solutions
+          </p>
+        </div>
+        <div className="mt-12">
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <h3 className="text-2xl font-bold text-gray-900">Senior Data Engineering Leader</h3>
+            <p className="mt-2 text-gray-600">Current Company • 2020 - Present</p>
+            <div className="mt-4">
+              <h4 className="text-lg font-semibold text-gray-900">Key Responsibilities</h4>
+              <ul className="mt-2 list-disc list-inside text-gray-600">
+                <li>Lead and mentor a team of data engineers and architects</li>
+                <li>Design and implement enterprise-scale data platforms</li>
+                <li>Drive data strategy and governance initiatives</li>
+                <li>Optimize data pipelines and ETL processes</li>
+                <li>Collaborate with cross-functional teams to deliver data solutions</li>
               </ul>
             </div>
           </div>
