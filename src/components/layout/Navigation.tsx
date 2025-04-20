@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { exportToPDF } from '../../utils/pdfExport';
 
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,7 +43,7 @@ const Navigation: React.FC = () => {
           </div>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center">
+          <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <button 
                 onClick={() => scrollToSection('about')}
@@ -84,26 +82,6 @@ const Navigation: React.FC = () => {
                 Contact
               </button>
             </div>
-            <button
-              onClick={exportToPDF}
-              className="ml-4 inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md text-teal-600 bg-white hover:bg-teal-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
-            >
-              <svg
-                className="mr-2 h-5 w-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                />
-              </svg>
-              PDF
-            </button>
           </div>
         </div>
       </div>
@@ -146,28 +124,6 @@ const Navigation: React.FC = () => {
             className="text-teal-100 hover:bg-teal-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left"
           >
             Contact
-          </button>
-          <button
-            onClick={exportToPDF}
-            className="text-teal-100 hover:bg-teal-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left"
-          >
-            <div className="flex items-center">
-              <svg
-                className="mr-2 h-5 w-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                />
-              </svg>
-              Export to PDF
-            </div>
           </button>
         </div>
       </div>
