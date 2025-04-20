@@ -3,8 +3,8 @@ import { exportToPDF } from '../utils/pdfExport';
 
 const Navigation: React.FC = () => {
   const navItems = [
-    { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
+    { label: 'Skills', href: '#skills' },
     { label: 'Experience', href: '#experience' },
     { label: 'Projects', href: '#projects' },
     { label: 'Contact', href: '#contact' },
@@ -25,7 +25,7 @@ const Navigation: React.FC = () => {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium"
+                  className="text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium hover:text-teal-600"
                 >
                   {item.label}
                 </a>
