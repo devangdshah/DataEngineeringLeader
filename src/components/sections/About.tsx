@@ -184,6 +184,66 @@ const About: React.FC = () => {
               </h4>
               <p className="mt-2 text-gray-600">Reduced ticket volume by 51.2% through innovative tool development</p>
             </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <h4 className="font-semibold text-gray-900 flex items-center">
+                <svg
+                  className="mr-2 h-5 w-5 text-teal-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+                Data Platform Transformation
+              </h4>
+              <p className="mt-2 text-gray-600">Architected and implemented a modern data platform serving 1000+ daily active users</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <h4 className="font-semibold text-gray-900 flex items-center">
+                <svg
+                  className="mr-2 h-5 w-5 text-teal-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                Quality & Reliability
+              </h4>
+              <p className="mt-2 text-gray-600">Achieved 99.99% data pipeline reliability through robust monitoring and automation</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <h4 className="font-semibold text-gray-900 flex items-center">
+                <svg
+                  className="mr-2 h-5 w-5 text-teal-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                  />
+                </svg>
+                Strategic Partnerships
+              </h4>
+              <p className="mt-2 text-gray-600">Established key partnerships with cloud providers and data vendors, optimizing costs by 30%</p>
+            </div>
           </div>
         </div>
       </div>
