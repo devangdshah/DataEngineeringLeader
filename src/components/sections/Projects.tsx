@@ -45,6 +45,24 @@ const Projects: React.FC = () => {
               Established comprehensive data governance and quality standards
             </p>
           </div>
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-bold text-gray-900">HR Analytics Platform</h3>
+            <p className="mt-2 text-gray-600">
+              Developed a comprehensive HR analytics platform serving 1M+ employees with real-time insights
+            </p>
+          </div>
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-bold text-gray-900">Supply Chain Optimization</h3>
+            <p className="mt-2 text-gray-600">
+              Created data-driven solutions reducing fulfillment times by 15% and saving $1M+ annually
+            </p>
+          </div>
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-bold text-gray-900">Proactive Delivery Defect Reduction</h3>
+            <p className="mt-2 text-gray-600">
+              Implemented real-time defect detection system, reducing delivery issues by 40% through root cause analysis and preventive measures
+            </p>
+          </div>
         </div>
       </div>
     </section>
