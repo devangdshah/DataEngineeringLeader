@@ -2,31 +2,79 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-white to-teal-50">
+    <section id="about" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-teal-600 sm:text-4xl flex items-center justify-center">
-            <svg
-              className="mr-2 h-8 w-8 text-teal-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-              />
-            </svg>
+          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
             About Me
           </h2>
-          <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-600 sm:mt-4">
-            A seasoned Data Engineering Leader with extensive experience in building and leading high-performing teams, 
-            architecting enterprise-scale data platforms, and driving data strategy across organizations. 
-            Proven track record in delivering complex data solutions that drive business value and innovation.
+          <p className="mt-4 text-lg text-gray-600">
+            Accomplished technical leader with over 19 years of expertise across data engineering, data science, data analytics, software engineering, and product management.
           </p>
+        </div>
+        
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Key Strengths</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <span className="text-teal-600 mr-2">✓</span>
+                <span>Strategic leadership in data engineering and analytics</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal-600 mr-2">✓</span>
+                <span>Expertise in cloud technologies and microservices architecture</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal-600 mr-2">✓</span>
+                <span>Proven track record in building scalable enterprise platforms</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal-600 mr-2">✓</span>
+                <span>Strong background in product strategy and global team management</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Core Competencies</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <span className="text-teal-600 mr-2">✓</span>
+                <span>Data Engineering & Analytics</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal-600 mr-2">✓</span>
+                <span>Cloud Architecture (AWS & GCP)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal-600 mr-2">✓</span>
+                <span>Team Leadership & Development</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal-600 mr-2">✓</span>
+                <span>Product Management & Strategy</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">Career Highlights</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <h4 className="font-semibold text-gray-900">Leadership Impact</h4>
+              <p className="mt-2 text-gray-600">Led and scaled teams of 25+ data professionals, driving innovation and efficiency</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <h4 className="font-semibold text-gray-900">Cost Optimization</h4>
+              <p className="mt-2 text-gray-600">Generated $1M+ annual savings through data-driven supply chain optimization</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <h4 className="font-semibold text-gray-900">Technical Innovation</h4>
+              <p className="mt-2 text-gray-600">Reduced ticket volume by 51.2% through innovative tool development</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
