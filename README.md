@@ -99,4 +99,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-Devang Shah - [LinkedIn](https://linkedin.com/in/devangshah)
+Devang Shah - [LinkedIn](https://linkedin.com/in/devang-d-shah)
