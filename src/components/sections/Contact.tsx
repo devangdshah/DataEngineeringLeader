@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
             Email
           </a>
           <a
-            href="https://linkedin.com/in/devangdshah"
+            href="https://linkedin.com/in/devang-d-shah"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center text-gray-600 hover:text-teal-600 transition-colors duration-300"
